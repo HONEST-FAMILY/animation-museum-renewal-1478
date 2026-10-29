@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>춘천 애니메이션박물관 홈페이지 리뉴얼 — 메인 시안 2개</title>
+<meta name="description" content="춘천 애니메이션박물관 메인 페이지 리뉴얼 시안 두 가지. 폰으로 열어 직접 만져 보세요.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="춘천 애니메이션박물관 홈페이지 리뉴얼 — 메인 시안 2개">
+<meta property="og:description" content="박물관 실제 사진 위에서, 손이 닿으면 애니메이션이 됩니다. 폰으로 열어 직접 만져 보세요.">
+<meta property="og:image" content="https://honest-family.github.io/animation-museum-renewal-1478/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body { font-family: Pretendard, -apple-system, "Apple SD Gothic Neo", sans-serif; color: #000; background: #fff; word-break: keep-all; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+img { display: block; width: 100%; height: auto; }
+.wrap { max-width: 1344px; margin: 0 auto; padding: 0 48px; }
+header { padding: 56px 0 40px; border-bottom: 1px solid #000; }
+.kicker { font-size: 15px; font-weight: 700; }
+h1 { font-size: clamp(36px, 5.4vw, 76px); font-weight: 800; letter-spacing: -.035em; line-height: 1; margin-top: 18px; }
+.say { margin-top: 36px; display: grid; gap: 14px; max-width: 900px; counter-reset: s; }
+.say p { font-size: clamp(16px, 1.5vw, 19px); line-height: 1.6; padding-left: 28px; position: relative; }
+.say p::before { counter-increment: s; content: counter(s) "."; position: absolute; left: 0; top: 0; font-weight: 800; }
+.say b { font-weight: 800; }
+.copy { margin-top: 22px; font: inherit; font-size: 15px; background: #fff; color: #000; border: 1px solid #000; padding: 9px 16px; cursor: pointer; }
+.copy[data-done] { background: #000; color: #fff; }
+.draft { padding: 56px 0; border-bottom: 1px solid #000; }
+.draft .shots { display: grid; grid-template-columns: 1fr 23.5%; gap: 16px; align-items: start; }
+.draft .shots a { display: block; border: 1px solid #d6d6d6; }
+.draft .meta { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 26px; }
+.label { font-size: 15px; font-weight: 700; color: #949494; }
+.label b { color: #000; }
+.draft h2 { font-size: clamp(30px, 3.4vw, 46px); font-weight: 800; letter-spacing: -.03em; line-height: 1.02; margin-top: 10px; }
+.draft p { font-size: 16px; line-height: 1.7; margin-top: 16px; max-width: 620px; }
+.draft dl { display: grid; grid-template-columns: 92px 1fr; gap: 10px 14px; font-size: 15px; line-height: 1.6; border-top: 1px solid #000; padding-top: 14px; }
+.draft dt { font-weight: 800; }
+.open { display: inline-block; margin-top: 22px; font-size: 17px; font-weight: 700; border: 1px solid #000; padding: 13px 22px; text-decoration: none; }
+.open:hover { background: #000; color: #fff; }
+section.block { padding: 56px 0; border-bottom: 1px solid #000; }
+section.block h3 { font-size: clamp(26px, 2.8vw, 38px); font-weight: 800; letter-spacing: -.03em; line-height: 1.05; margin-bottom: 26px; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.pair figure { display: grid; grid-template-columns: 1fr 24%; gap: 8px; align-items: start; }
+.pair figure img { border: 1px solid #d6d6d6; }
+.pair figcaption { grid-column: 1 / -1; font-size: 15px; line-height: 1.6; margin-top: 6px; }
+.pair figcaption b { font-weight: 800; }
+.pair.eq { grid-template-columns: 1fr; gap: 36px; }
+.pair.eq figure { grid-template-columns: 1fr 1fr; gap: 12px; }
+.notes { display: grid; gap: 12px; max-width: 900px; }
+.notes p { font-size: 15.5px; line-height: 1.75; }
+.notes b { font-weight: 800; }
+footer { padding: 36px 0 72px; font-size: 13px; color: #949494; line-height: 1.7; }
+@media (max-width: 860px) {
+  .wrap { padding: 0 16px; }
+  header { padding: 36px 0 30px; }
+  .draft { padding: 40px 0; }
+  .draft .meta, .pair { grid-template-columns: 1fr; gap: 22px; }
+  .draft .shots { grid-template-columns: 1fr 34%; gap: 8px; }
+  .open { display: block; text-align: center; }
+  section.block { padding: 40px 0; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="kicker">춘천 애니메이션박물관 · 홈페이지 리뉴얼 제안</p>
+    <h1>메인 페이지 시안 2개</h1>
+    <div class="say" id="say">
+      <p>지금 홈페이지는 첫 화면을 기획전 팝업이 가리고(폰은 화면 전체), 오늘 문을 여는지·얼마인지가 바로 보이지 않습니다. 두 시안 모두 <b>첫 화면에 오늘 운영 여부(날짜로 자동 계산)와 예매 버튼</b>을 올렸습니다.</p>
+      <p>겉모습은 디자인으로 이름난 해외 미술관 사이트(덴마크 루이지애나 미술관, 뉴욕 휘트니 미술관)의 첫 화면 구성을 기준으로 삼았고, <b>사진은 박물관의 실제 사진만</b> 썼습니다.</p>
+      <p>그 안에 애니메이션 기법 하나씩을 손으로 해 보게 넣었습니다 — <b>1안은 사진을 문지르면 그 자리가 손으로 그린 애니메이션 한 장이 되고, 2안은 머리글의 선 하나를 튕기면 영사기·필름·연필로 변신</b>합니다.</p>
+    </div>
+    <button class="copy" id="copy" type="button">세 줄 복사</button>
+  </header>
+
+  <article class="draft">
+    <div class="shots">
+      <a href="a/index.html"><img src="shared/shots/a-pc.jpg" alt="1안 PC 첫 화면" loading="lazy"></a>
+      <a href="a/index.html"><img src="shared/shots/a-m.jpg" alt="1안 폰 첫 화면" loading="lazy"></a>
+    </div>
+    <div class="meta">
+      <div>
+        <p class="label"><b>1안 · 권장</b> · 로토스코프</p>
+        <h2>손이 닿으면<br>그림이 됩니다</h2>
+        <p id="desc-a">박물관 첫 화면 사진(장난감 영사기 진열)을 손가락으로 문지르면, 지나간 자리가 애니메이션 셀 한 장으로 바뀝니다 — 평평하게 칠한 색과 먹선, 그리고 손그림처럼 1초에 12번 떨리는 선. 누르면 사진 전체가 한 번에 그림이 됐다가 다시 사진으로 돌아옵니다. 실제 장면을 한 장씩 따라 그려 애니메이션을 만든 로토스코프(맥스 플라이셔, 1917년 특허)의 원리입니다.</p>
+        <a class="open" href="a/index.html">1안 열어 보기 →</a>
+      </div>
+      <dl>
+        <dt>손짓</dt><dd>문지르기 · 누르기</dd>
+        <dt>디자인 원본</dt><dd>루이지애나 미술관(louisiana.dk) 첫 화면 — 화면 가득 실사진, 흰 굵은 제목, 아래 운영시간 띠</dd>
+        <dt>사진</dt><dd>박물관 홈페이지 실제 사진</dd>
+        <dt>폰</dt><dd>사진 위를 쓸면 그림이 되고, 세로로 쓸면 페이지는 그대로 내려갑니다</dd>
+      </dl>
+    </div>
+  </article>
+
+  <article class="draft">
+    <div class="shots">
+      <a href="b/index.html"><img src="shared/shots/b-pc.jpg" alt="2안 PC 첫 화면" loading="lazy"></a>
+      <a href="b/index.html"><img src="shared/shots/b-m.jpg" alt="2안 폰 첫 화면" loading="lazy"></a>
+    </div>
+    <div class="meta">
+      <div>
+        <p class="label"><b>2안</b> · 선 하나의 변신</p>
+        <h2>선 하나</h2>
+        <p id="desc-b">흰 바탕에 큰 이름, 그 이름을 감싼 검은 선 하나. 손으로 선을 튕기면 줄처럼 출렁이고, 누르면 그 선이 영사기·35mm 필름·연필·상상의 계단으로 차례차례 변신합니다. 아래 전시 사진에 마우스를 올리면 선이 그 전시의 물건 모양이 됩니다. 손그림 애니메이션의 출발점으로 꼽히는 에밀 콜의 「팡타스마고리」(1908)가 선 하나를 쉬지 않고 변신시킨 방식입니다.</p>
+        <a class="open" href="b/index.html">2안 열어 보기 →</a>
+      </div>
+      <dl>
+        <dt>손짓</dt><dd>튕기기 · 누르기 · 사진 위에 올리기</dd>
+        <dt>디자인 원본</dt><dd>휘트니 미술관(whitney.org) 첫 화면 — 흰 바탕, 큰 이름을 감싼 선, 큰 메뉴, 사진 격자</dd>
+        <dt>사진</dt><dd>박물관 홈페이지 실제 사진</dd>
+        <dt>폰</dt><dd>선을 가로로 끌면 튕기고, 세로로 쓸면 페이지는 그대로 내려갑니다</dd>
+      </dl>
+    </div>
+  </article>
+
+  <section class="block">
+    <h3>지금 홈페이지와 나란히</h3>
+    <div class="pair">
+      <figure><img src="shared/shots/now-pc.jpg" alt="지금 홈페이지 PC 첫 화면" loading="lazy"><img src="shared/shots/now-m.jpg" alt="지금 홈페이지 폰 첫 화면" loading="lazy"><figcaption><b>지금</b> — 기획전 팝업이 첫 화면을 가리고, 폰에서는 팝업이 화면 전체를 덮습니다. 만질 수 있는 것은 없습니다.</figcaption></figure>
+      <figure><img src="shared/shots/a-pc.jpg" alt="1안 PC 첫 화면" loading="lazy"><img src="shared/shots/b-m.jpg" alt="2안 폰 첫 화면" loading="lazy"><figcaption><b>시안</b> — 첫 화면에 오늘 운영 여부와 예매, 그리고 손에 반응하는 장면 하나.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="block">
+    <h3>디자인 원본과 같은 폭으로</h3>
+    <div class="pair eq">
+      <figure><img src="shared/shots/ref-a-pc.jpg" alt="루이지애나 미술관 첫 화면" loading="lazy"><img src="shared/shots/a-pc-rest.jpg" alt="1안 첫 화면" loading="lazy"><figcaption><b>1안 ← 루이지애나 미술관</b> — 사진 크기·제목 자리와 굵기·위 줄 배치·아래 운영시간 띠를 같은 숫자로 맞췄습니다.</figcaption></figure>
+      <figure><img src="shared/shots/ref-b-pc.jpg" alt="휘트니 미술관 첫 화면" loading="lazy"><img src="shared/shots/b-pc-rest.jpg" alt="2안 첫 화면" loading="lazy"><figcaption><b>2안 ← 휘트니 미술관</b> — 이름을 감싼 선, 테두리 버튼, 큰 메뉴, 사진 격자를 같은 숫자로 맞췄습니다.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="block">
+    <h3>만든 방법</h3>
+    <div class="notes">
+      <p><b>1안을 권하는 이유</b> — 첫 화면이 박물관의 실제 사진 한 장이고, 손을 대는 순간 그 사진이 애니메이션이 됩니다. ‘애니메이션은 이렇게 만들어진다’를 설명 없이 손끝으로 알게 되고, 가족 관람객이 폰으로 열자마자 문질러 보게 됩니다.</p>
+      <p><b>사진·글</b> — 사진, 기획전 포스터, 관람시간·요금·교통은 지금 홈페이지(gica.or.kr/Ani)의 것을 그대로 썼습니다(2026년 10월 29일 기준). 더 크고 선명한 원본 사진을 주시면 그대로 바꿔 넣습니다.</p>
+      <p><b>움직임</b> — 외부 효과 도구 없이 직접 계산합니다. 폰에서는 장면 위를 세로로 쓸면 페이지가 그대로 내려가고, ‘움직임 줄이기’ 설정을 켠 기기에서는 저절로 움직이는 효과를 끕니다.</p>
+    </div>
+  </section>
+
+  <footer>춘천 애니메이션박물관 홈페이지 리뉴얼 메인 시안 · 어니스트패밀리 · 2026.10.29<br>시안 속 사진과 정보는 춘천 애니메이션박물관 홈페이지(강원정보문화산업진흥원)에서 가져왔습니다. 디자인 원본 화면은 비교를 위해 실었습니다(louisiana.dk, whitney.org).</footer>
+</div>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var t = [].map.call(document.querySelectorAll('#say p'), function (p, i) { return (i + 1) + '. ' + p.textContent.trim(); }).join('\n');
+  var b = this;
+  var done = function () { b.textContent = '복사했습니다'; b.setAttribute('data-done', ''); };
+  var fallback = function () {
+    var ta = document.createElement('textarea');
+    ta.value = t; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    if (ok) done(); else b.textContent = '복사가 안 됩니다 — 글을 길게 눌러 복사해 주세요';
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done, fallback); else fallback();
+});
+</script>
+</body>
+</html>

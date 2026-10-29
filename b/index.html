@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>애니메이션박물관 — 선 하나</title>
+<meta name="description" content="우리나라 유일한 애니메이션박물관. 2003년 10월 1일 개관, 480만 명 이상이 찾은 춘천 서면 박사로 854.">
+<meta property="og:title" content="춘천 애니메이션박물관 — 선 하나">
+<meta property="og:description" content="머리글의 선 하나를 튕기고 눌러 보세요. 영사기가 되고, 필름이 되고, 연필이 됩니다.">
+<meta property="og:image" content="https://honest-family.github.io/animation-museum-renewal-1478/og.jpg">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bar" aria-hidden="true">
+  <div class="bar-in">
+    <a class="bar-name" href="#top">애니메이션박물관</a>
+    <div class="bar-right">
+      <span class="bar-open" data-open-text>오늘 10:00–18:00 운영</span>
+      <a class="btn btn-s" href="#visit">관람권 예매</a>
+      <a class="btn btn-s" href="#visit">단체 예약</a>
+      <button class="bar-menu" type="button" data-menu-toggle>메뉴 <svg width="18" height="11" viewBox="0 0 18 11" aria-hidden="true"><path d="M1 10 9 2l8 8" fill="none" stroke="#000" stroke-width="1.5"/></svg></button>
+    </div>
+  </div>
+</div>
+
+<header class="head" id="top">
+  <canvas class="line-canvas" data-line-canvas aria-hidden="true"></canvas>
+  <div class="line-area" data-line-area>
+    <h1 class="mark"><span>애니메이션</span><span>박물관</span></h1>
+  </div>
+  <div class="head-meta">
+    <p class="line-now" aria-live="polite"><b>선 하나</b> · 점 <span data-line-count>0</span>개 · 지금: <span data-line-name>쉬는 선</span><br><span class="line-note">손그림 애니메이션의 출발점으로 꼽히는 에밀 콜 「팡타스마고리」(1908)처럼 — 선을 튕기거나 눌러 보세요</span></p>
+    <div class="head-open">
+      <span class="open-text" data-open-text>오늘 10:00–18:00 운영</span>
+      <a class="btn btn-s" href="#visit">관람권 예매</a>
+      <a class="btn btn-s" href="#visit">단체 예약</a>
+    </div>
+  </div>
+  <div class="head-mob">
+    <p class="mob-name">춘천<br>애니메이션박물관</p>
+    <a class="btn btn-s" href="#visit">관람권</a>
+    <button class="burger" type="button" aria-label="메뉴" data-menu-toggle><i></i><i></i></button>
+  </div>
+  <nav class="nav" aria-label="주요 메뉴">
+    <ul>
+      <li><a href="#visit">관람</a></li>
+      <li><a href="#exhibits">전시</a></li>
+      <li><a href="#play">체험</a></li>
+      <li><a href="#learn">교육</a></li>
+      <li><a href="#news">소식</a></li>
+    </ul>
+    <div class="nav-icons">
+      <a class="nav-vr" href="#exhibits" title="버츄얼 뮤지엄">VR</a>
+      <a class="nav-search" href="#exhibits" aria-label="검색"><svg width="31" height="31" viewBox="0 0 31 31" aria-hidden="true"><circle cx="12.5" cy="12.5" r="10.5" fill="none" stroke="#000" stroke-width="1.5"/><path d="M20 20l9.5 9.5" stroke="#000" stroke-width="1.5"/></svg></a>
+    </div>
+  </nav>
+</header>
+
+<div class="menu-panel" data-menu-panel hidden>
+  <ul>
+    <li><a href="#visit">관람</a></li>
+    <li><a href="#exhibits">전시</a></li>
+    <li><a href="#play">체험</a></li>
+    <li><a href="#learn">교육</a></li>
+    <li><a href="#news">소식</a></li>
+  </ul>
+</div>
+
+<main>
+  <section class="row-a" id="exhibits">
+    <div class="col-l">
+      <div class="col-l-in">
+        <a class="pic pic-big" href="#visit" data-shape="projector">
+          <img src="../shared/photos/projector-toy.jpg" alt="1층 영사기 전시 — 장난감 영사기와 필름 릴" style="object-position:54% 46%">
+        </a>
+        <h2 class="t-xl">영사기는 어떻게<br>시작되었을까요<span class="t-gray">1층 영사기</span></h2>
+        <div class="btns">
+          <a class="btn" href="#visit">전시 자세히 보기</a>
+          <a class="btn" href="#visit">관람권 예매</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-r">
+      <article class="card-r">
+        <a class="pic" href="#visit" data-shape="hand"><img src="../shared/photos/cave.jpg" alt="1층 동굴벽화 전시실" loading="lazy"></a>
+        <h3 class="t-l">애니메이션은<br>무슨 뜻일까요<span class="t-gray">1층 동굴벽화</span></h3>
+      </article>
+      <article class="card-r">
+        <a class="pic" href="#visit" data-shape="film"><img src="../shared/photos/history-wall.jpg" alt="1층 전시관 — 한국 애니메이션 역사 벽" loading="lazy"></a>
+        <h3 class="t-l">탄생부터<br>한국 애니메이션까지<span class="t-gray">1층 전시관</span></h3>
+      </article>
+      <article class="card-r">
+        <a class="pic" href="#visit" data-shape="pencil"><img src="../shared/photos/memorial.jpg" alt="2층 메모리얼 홀" loading="lazy"></a>
+        <h3 class="t-l">故 신동헌 감독<br>메모리얼 홀<span class="t-gray">2층</span></h3>
+      </article>
+      <a class="btn btn-wide" href="#visit">전시 전체 보기</a>
+    </div>
+  </section>
+
+  <section class="row-3" id="play">
+    <article class="card-3">
+      <a class="pic" href="#visit"><img src="../shared/photos/event-clown.jpg" alt="야외 행사에서 공연을 보는 가족들" loading="lazy" style="object-position:30% 50%"></a>
+      <h3 class="t-l">무료·할인 관람</h3>
+      <p>24개월 미만은 무료입니다. 매월 마지막 주 수요일 ‘문화가 있는 날’(공휴일·7월 제외)과 만 18세 미만 자녀 2명 이상과 함께 오는 다자녀 가족은 20% 할인됩니다.</p>
+      <a class="btn" href="#visit">관람 요금 보기</a>
+    </article>
+    <article class="card-3" id="news">
+      <a class="pic" href="#visit"><img src="../shared/photos/anima-poster.jpg" alt="기획전 아니마 포스터" loading="lazy" style="object-position:50% 12%"></a>
+      <h3 class="t-l">아니마,<br>지금 양평에서</h3>
+      <p>제21회 기획전 《아니마(ANIMA) — 연필 끝에서 살아나는 우리들의 얼굴》. 애니메이션박물관(8.11–9.13)과 가평 음악역1939(9.19–10.18)를 거쳐 양평 황순원문학촌에서 11월 29일까지 이어집니다.</p>
+      <a class="btn" href="#visit">기획전 보기</a>
+    </article>
+    <article class="card-3">
+      <a class="pic" href="#visit"><img src="../shared/photos/dubbing.jpg" alt="2층 더빙 스튜디오" loading="lazy"></a>
+      <h3 class="t-l">더빙·폴리아티스트<br>체험</h3>
+      <p>2층 체험공간에서 소리를 만들어 내는 폴리아티스트 체험과 더빙체험을 할 수 있습니다.</p>
+      <a class="btn" href="#visit">체험 안내</a>
+    </article>
+  </section>
+
+  <section class="row-2" id="learn">
+    <article class="card-2">
+      <a class="pic" href="#visit"><img src="../shared/photos/pinscreen.jpg" alt="2층 핀스크린 체험" loading="lazy"></a>
+      <h3 class="t-l">몸으로 느껴보는<br>핀스크린<span class="t-gray">2층 애니메이션이랑 놀자</span></h3>
+      <p>핀스크린 체험, 주인공 체험, 캐릭터 변검체험을 할 수 있습니다. 연 2회 이상 애니메이션 기획전과 교육·행사·체험을 운영합니다.</p>
+    </article>
+    <article class="card-2">
+      <a class="pic" href="#visit"><img src="../shared/photos/shop-1.jpg" alt="1층 뮤지엄샵" loading="lazy"></a>
+      <h3 class="t-l">뮤지엄샵과<br>구름빵 카페<span class="t-gray">1층</span></h3>
+      <p>관람을 마치고 1층 뮤지엄샵과 구름빵 카페에 들러 보세요. 온라인 버츄얼 뮤지엄에서는 1층·2층을 VR로 미리 구경할 수 있습니다.</p>
+    </article>
+  </section>
+
+  <section class="info" id="visit">
+    <h2 class="t-xl info-h">관람 안내<span class="t-gray" data-open-long>오늘 10:00–18:00 운영</span></h2>
+    <div class="info-grid">
+      <div class="info-c">
+        <h3 class="t-m">시간</h3>
+        <p>10:00–18:00 (입장 마감 17:00)<br>화요일–일요일</p>
+        <p>정기휴관: 매주 월요일(월요일이 공휴일이면 다음날), 1월 1일, 설·추석 당일</p>
+        <p>관람에는 약 1시간 30분~2시간이 걸립니다. 오후 4시 이전 입장을 권장합니다.</p>
+      </div>
+      <div class="info-c">
+        <h3 class="t-m">관람권</h3>
+        <dl class="price">
+          <div><dt>개인</dt><dd>7,000원</dd></div>
+          <div><dt>단체(20인 이상)</dt><dd>5,600원</dd></div>
+          <div><dt>춘천시민</dt><dd>5,000원</dd></div>
+        </dl>
+        <p>애니메이션박물관과 토이로봇관 통합 관람권이며 모든 연령이 같습니다. 단체·춘천시민은 현장발권만 됩니다.</p>
+      </div>
+      <div class="info-c">
+        <h3 class="t-m">무료·할인</h3>
+        <p>무료: 24개월 미만, 1~3등급 중증장애인(동반 1인), 국가유공자(동반 배우자), 자료 기증자(가족 포함), 병역명문가(본인)</p>
+        <p>20% 할인: 매월 마지막 주 수요일 ‘문화가 있는 날’(공휴일·7월 제외), 다자녀(만 18세 미만 자녀 2명 이상 함께 방문)</p>
+        <p>온라인 예매는 당일 오후 3시까지(예매 1시간 뒤 사용), 네이버·인터파크에서 할 수 있습니다.</p>
+      </div>
+    </div>
+    <div class="btns">
+      <a class="btn" href="https://search.naver.com/search.naver?query=%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98%EB%B0%95%EB%AC%BC%EA%B4%80+%EC%98%88%EC%95%BD" target="_blank" rel="noopener">네이버 예약</a>
+      <a class="btn" href="https://tickets.interpark.com/search?keyword=%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98%EB%B0%95%EB%AC%BC%EA%B4%80" target="_blank" rel="noopener">인터파크 예약</a>
+    </div>
+  </section>
+
+  <section class="info" id="way">
+    <h2 class="t-xl info-h">오시는 길<span class="t-gray">춘천시 서면 박사로 854</span></h2>
+    <div class="info-grid">
+      <div class="info-c">
+        <h3 class="t-m">주소</h3>
+        <p>강원특별자치도 춘천시 서면 박사로 854 (24461)</p>
+        <p>애니메이션박물관 033-245-6470<br>토이로봇관 033-245-6460</p>
+      </div>
+      <div class="info-c">
+        <h3 class="t-m">기차·버스</h3>
+        <p>ITX-청춘 용산–춘천 1시간 10분<br>경춘선 상봉–춘천 1시간 20분<br>시외버스 동서울–춘천 1시간 10분</p>
+      </div>
+      <div class="info-c">
+        <h3 class="t-m">시내버스</h3>
+        <p>서면 3·4·5·6번 ‘애니메이션박물관 입구’ 하차</p>
+        <a class="btn" href="https://map.naver.com/p/search/%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98%EB%B0%95%EB%AC%BC%EA%B4%80" target="_blank" rel="noopener">지도 보기</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <p class="foot-mark">애니메이션박물관</p>
+    <p>우리나라 유일한 애니메이션박물관 · 2003년 10월 1일 개관 · 480만 명 이상 방문(토이로봇관 포함)</p>
+    <p>운영 강원정보문화산업진흥원 · 24461 강원특별자치도 춘천시 서면 박사로 854 · 033-245-6470 · 자료기증 033-245-6410</p>
+  </div>
+</footer>
+
+<script src="js/page.js"></script>
+<script src="js/line.js"></script>
+</body>
+</html>

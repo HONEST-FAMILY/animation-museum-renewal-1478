@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>애니메이션박물관 — 추억과 상상이 움직이는 곳</title>
+<meta name="description" content="우리나라 유일한 애니메이션박물관. 춘천 서면 박사로 854, 화–일 10:00–18:00.">
+<meta property="og:title" content="춘천 애니메이션박물관 — 손이 닿으면 그림이 됩니다">
+<meta property="og:description" content="사진을 문지르면 그 자리가 1초에 12장 그린 애니메이션이 됩니다.">
+<meta property="og:image" content="https://honest-family.github.io/animation-museum-renewal-1478/og.jpg">
+<meta name="theme-color" content="#1b2233">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css">
+<link rel="preload" as="image" href="../shared/photos/projector-toy.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="lang"><span>KO</span><svg viewBox="0 0 16 10" aria-hidden="true"><path d="M1 5h13M10 1l4 4-4 4"/></svg><a href="#">EN</a></div>
+  <a class="brand" href="#">애니메이션박물관</a>
+  <nav class="nav" aria-label="주 메뉴">
+    <a href="#visit">관람 안내</a>
+    <a href="#exhibits">전시</a>
+    <a href="#family">체험·교육</a>
+    <a href="#about">박물관 소개</a>
+  </nav>
+  <div class="icons">
+    <button class="ic ic-clock" type="button" aria-label="오늘 운영 시간"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5V12l3 2.2"/></svg></button>
+    <button class="ic ic-search" type="button" aria-label="검색"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7"/><path d="M15.6 15.6 21 21"/></svg></button>
+    <button class="ic ic-menu" type="button" aria-label="메뉴 열기" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M6 3v18M12 3v18M18 3v18"/></svg></button>
+  </div>
+</header>
+
+<div class="menu" aria-hidden="true">
+  <div class="menu-in">
+    <div class="menu-col">
+      <p class="menu-h">관람 안내</p>
+      <a href="#visit">운영 시간과 요금</a>
+      <a href="#visit">관람권 예매</a>
+      <a href="#way">오시는 길</a>
+      <a href="#family">단체 예약</a>
+    </div>
+    <div class="menu-col">
+      <p class="menu-h">전시</p>
+      <a href="#exhibits">1층 상설 전시</a>
+      <a href="#exhibits">2층 상설 전시</a>
+      <a href="#anima">기획전</a>
+      <a href="#news">박물관 소식</a>
+    </div>
+    <div class="menu-col">
+      <p class="menu-h">박물관 소개</p>
+      <a href="#about">애니메이션박물관이란?</a>
+      <a href="#news">자료 기증</a>
+      <a href="#anima">버츄얼 뮤지엄</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="hero" aria-label="첫 화면">
+    <img class="hero-photo" src="../shared/photos/projector-toy.jpg" alt="애니메이션박물관 1층 영사기 진열 — 오래된 장난감 영사기와 사자 그림 상자">
+    <canvas class="hero-gl" aria-hidden="true"></canvas>
+    <h1 class="hero-title"><span class="ln"><span>추억과 상상이</span></span><span class="ln"><span>움직이는 곳</span></span></h1>
+    <p class="hero-hint">사진을 문질러 보세요. 손이 닿은 곳이 1초에 12장 그린 애니메이션이 됩니다.</p>
+    <a class="scroll-down" href="#about" aria-label="아래로"><svg viewBox="0 0 40 40"><path d="M20 2v35M4 21l16 16 16-16"/></svg></a>
+    <div class="cursor" aria-hidden="true"><span class="ring"></span><span class="dot"></span><span class="lbl">문지르기</span></div>
+  </section>
+
+  <div class="visit-bar">
+    <div class="today">
+      <button class="today-btn" type="button" aria-expanded="false"><span class="today-txt">오늘 10:00 – 18:00 운영</span><svg viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg></button>
+      <div class="today-pop" hidden>
+        <p class="today-now">지금 관람할 수 있어요</p>
+        <p>10:00 – 18:00 · 입장 마감 17:00</p>
+        <p>매주 월요일 휴관(월요일이 공휴일이면 다음 날) · 1월 1일 · 설·추석 당일 휴관</p>
+      </div>
+    </div>
+    <span class="vline" aria-hidden="true"></span>
+    <div class="quick">
+      <a href="#visit">관람권 예매</a>
+      <a href="#way">오시는 길</a>
+      <a href="#family">단체 예약</a>
+    </div>
+  </div>
+
+  <section class="intro" id="about">
+    <p>우리나라에 하나뿐인 애니메이션박물관입니다. 2003년 10월 1일 문을 연 뒤 480만 명 넘게(토이로봇관 포함) 다녀갔습니다. 애니메이션의 기원과 탄생, 종류와 제작기법, 한국과 세계 애니메이션의 역사를 살펴보고, 음향효과와 더빙을 직접 만들어 볼 수 있습니다.</p>
+  </section>
+
+  <section class="exhibits" id="exhibits">
+    <div class="sec-head">
+      <h2 class="h2"><span class="ln"><span>지금 볼 수 있는 전시</span></span></h2>
+      <div class="arrows">
+        <button class="arr prev" type="button" aria-label="이전 전시" disabled><svg viewBox="0 0 44 30"><path d="M43 15H3M16 2 3 15l13 13"/></svg></button>
+        <button class="arr next" type="button" aria-label="다음 전시"><svg viewBox="0 0 44 30"><path d="M1 15h40M28 2l13 13-13 13"/></svg></button>
+      </div>
+    </div>
+    <div class="track" tabindex="0" aria-label="전시 목록">
+      <article class="card">
+        <div class="ph"><img src="../shared/photos/cave.jpg" alt="1층 동굴벽화 전시실" loading="lazy"></div>
+        <h3>동굴벽화</h3>
+        <p class="when">1층 · 상설 전시</p>
+        <p class="txt">애니메이션은 무슨 뜻일까요? 기원전 1만 년 경 알타미라 동굴에서 그 뜻과 원리를 알아보세요.</p>
+        <a href="#exhibits">전시 자세히</a>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="../shared/photos/projector-hall-a.jpg" alt="1층 영사기 전시실" loading="lazy"></div>
+        <h3>영사기</h3>
+        <p class="when">1층 · 상설 전시</p>
+        <p class="txt">영사기는 어떻게 시작되었을까요? 환등기에서 시작된 영사기의 발달 과정과 1890년대에 쓰던 유리필름을 만나 보세요.</p>
+        <a href="#exhibits">전시 자세히</a>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="../shared/photos/history-wall.jpg" alt="1층 전시관 한국 애니메이션 역사 벽" loading="lazy"></div>
+        <h3>1층 전시관</h3>
+        <p class="when">1층 · 상설 전시</p>
+        <p class="txt">애니메이션의 탄생과 발전 과정을 영상과 다양한 전시물로 살펴보세요. 애니메이션의 종류와 한국 애니메이션의 역사를 알 수 있습니다.</p>
+        <a href="#exhibits">전시 자세히</a>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="../shared/photos/memorial.jpg" alt="2층 메모리얼 홀" loading="lazy"></div>
+        <h3>메모리얼 홀</h3>
+        <p class="when">2층 · 상설 전시</p>
+        <p class="txt">한국 애니메이션의 산 역사, 故 신동헌 감독을 기리는 공간입니다.</p>
+        <a href="#exhibits">전시 자세히</a>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="../shared/photos/pinscreen.jpg" alt="2층 핀스크린 체험" loading="lazy"></div>
+        <h3>애니메이션이랑 놀자</h3>
+        <p class="when">2층 · 체험</p>
+        <p class="txt">몸으로 느껴 보는 핀스크린 체험, 주인공 체험, 캐릭터 변검 체험을 할 수 있습니다.</p>
+        <a href="#exhibits">체험 자세히</a>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="../shared/photos/dubbing.jpg" alt="2층 더빙 스튜디오" loading="lazy"></div>
+        <h3>체험공간</h3>
+        <p class="when">2층 · 체험</p>
+        <p class="txt">소리를 만들어 내는 폴리아티스트 체험과 더빙 체험을 할 수 있습니다.</p>
+        <a href="#exhibits">체험 자세히</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" id="visit">
+    <h2 class="h2"><span class="ln"><span>관람 시간과</span></span><span class="ln"><span>요금</span></span></h2>
+    <p>오전 10시에 열어 오후 6시에 닫고, 입장은 오후 5시에 마감합니다. 매주 월요일(월요일이 공휴일이면 다음 날)과 1월 1일, 설·추석 당일은 쉽니다. 둘러보는 데 1시간 30분~2시간쯤 걸리니 오후 4시 전에 들어오시길 권합니다.</p>
+    <p>관람권 한 장으로 애니메이션박물관과 토이로봇관을 함께 봅니다. <b>개인 7,000원 · 단체(20인 이상) 5,600원 · 춘천시민 5,000원</b>(단체·춘천시민은 현장 발권). 24개월 미만, 1~3등급 중증장애인(동반 1인), 국가유공자(동반 배우자), 자료 기증자(가족 포함), 병역명문가(본인)는 무료입니다. 매월 마지막 주 수요일 '문화가 있는 날'(공휴일·7월 제외)과 만 18세 미만 자녀 2명 이상과 함께 오는 다자녀 가족은 20% 할인됩니다.</p>
+    <p class="links"><a href="#visit"><b>네이버로 예매하기</b></a> <a href="#visit"><b>인터파크로 예매하기</b></a></p>
+    <p class="small">온라인 예매는 당일 오후 3시까지 할 수 있고, 예매 1시간 뒤부터 쓸 수 있습니다.</p>
+  </section>
+
+  <section class="feature" id="family">
+    <div class="feature-ph"><img src="../shared/photos/event-clown.jpg" alt="애니메이션박물관 야외 공연을 보는 가족 관람객" loading="lazy"></div>
+    <div class="feature-txt">
+      <h2 class="h2"><span class="ln"><span>엄마 아빠의 추억,</span></span><span class="ln"><span>아이들의 상상</span></span></h2>
+      <div class="feature-body">
+        <p>엄마 아빠의 추억과 아이들의 상상이, 우리의 과거와 미래가 소통하는 공간. 애니메이션을 주제로 누구나 함께 즐길 수 있도록 교육·행사·체험을 기획해 운영하고, 해마다 두 번 이상 애니메이션 기획전을 엽니다.</p>
+        <p class="links"><a href="#family">전시·체험·행사 보기</a></p>
+        <p class="links"><a href="#family">단체 예약 안내</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="duo" id="anima">
+    <div class="duo-txt">
+      <p class="when">제21회 기획전 · 순회 중</p>
+      <h2 class="h2"><span class="ln"><span>아니마, 지금은</span></span><span class="ln"><span>양평에서</span></span></h2>
+      <p>《아니마(ANIMA) — 연필 끝에서 살아나는 우리들의 얼굴》. 애니메이션박물관(26.8.11–9.13)에서 시작해 가평 음악역1939(9.19–10.18)를 거쳐, 지금은 양평 황순원문학촌(10.27–11.29)에서 이어집니다.</p>
+      <p class="links"><a href="#news">순회전 소식</a></p>
+      <p class="links"><a href="#anima">버츄얼 뮤지엄 둘러보기</a></p>
+    </div>
+    <div class="duo-ph"><img src="../shared/photos/anima-poster.jpg" alt="기획전 아니마 포스터" loading="lazy"></div>
+  </section>
+
+  <section class="block news" id="news">
+    <h2 class="h2"><span class="ln"><span>박물관 소식</span></span></h2>
+    <ul class="list">
+      <li><a href="#news">「42.195km, a Story on the Road 길 위의 이야기」</a><span>최순연</span></li>
+      <li><a href="#news">「예술이야」</a><span>하나린주간보호소</span></li>
+      <li><a href="#news">「A Hundred of whatnot」</a><span>백은기</span></li>
+      <li><a href="#news">2026년 추석연휴 운영 안내</a><span>공지</span></li>
+      <li><a href="#news">자료 기증 안내</a><span>애니메이션과 관련된 소중한 자료를 기증받습니다 · 033-245-6410</span></li>
+    </ul>
+  </section>
+
+  <section class="block way" id="way">
+    <h2 class="h2"><span class="ln"><span>오시는 길</span></span></h2>
+    <p>강원특별자치도 춘천시 서면 박사로 854 (24461)<br>애니메이션박물관 033-245-6470 · 토이로봇관 033-245-6460</p>
+    <dl class="ways">
+      <div><dt>ITX-청춘</dt><dd>용산 – 춘천 1시간 10분</dd></div>
+      <div><dt>경춘선</dt><dd>상봉 – 춘천 1시간 20분</dd></div>
+      <div><dt>시외버스</dt><dd>동서울 – 춘천 1시간 10분</dd></div>
+      <div><dt>시내버스</dt><dd>서면 3·4·5·6번, '애니메이션박물관 입구' 하차</dd></div>
+    </dl>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <p class="foot-brand">애니메이션박물관</p>
+    <p>운영 강원정보문화산업진흥원 · 24461 강원특별자치도 춘천시 서면 박사로 854 · 033-245-6470</p>
+    <p class="cite">첫 화면의 그림 바꾸기는 로토스코프(맥스 플라이셔, 1917년 미국 특허 1,242,674) 방식입니다 — 실제 장면을 한 장씩 따라 그려 움직임을 만든 기법. 사진은 애니메이션박물관 홈페이지에 실린 1층 영사기 진열입니다.</p>
+  </div>
+</footer>
+
+<script src="js/page.js"></script>
+<script src="js/roto.js"></script>
+</body>
+</html>
